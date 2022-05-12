@@ -10,7 +10,7 @@ function App() {
   const [personas, setPersonas] = useState([]);
 
   useEffect(() => {
-    axios.get(`http://${window.location.hostname}:8080/v1/persona/all`)
+    axios.get(`http://${window.location.hostname}:8888/v1/persona/all`)
     .then(function (response) {
       setPersonas(response.data);
     })
